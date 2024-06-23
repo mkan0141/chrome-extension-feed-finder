@@ -1,6 +1,6 @@
 pre-commit:
   parallel: true
   commands:
-    prettier:
+    biome format:
       glob: "*.{js,ts,jsx,tsx}"
-      run: pnpm prettier -c {staged_files}
+      run: pnpm biome format {staged_files}
