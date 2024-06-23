@@ -1,7 +1,7 @@
 import { FeedInformation } from "./components/FeedInformation";
 
 function IndexPopup() {
-  return <FeedInformation />;
+	return <FeedInformation />;
 }
 
 export default IndexPopup;
