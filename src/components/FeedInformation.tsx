@@ -33,42 +33,42 @@ const styleFeedUrl = css`
 `;
 
 const FeedInformation = () => {
-	const [feed, setFeeds] = useState<{
-		faviconUrl: string;
-		feedUrl: string;
-		pageTitle: string;
-	}>();
+  const [feed, setFeeds] = useState<{
+    faviconUrl: string;
+    feedUrl: string;
+    pageTitle: string;
+  }>();
 
-	useEffect(() => {
-		getCurrentTabFeeds().then((currentTabFeeds) => {
-			setFeeds(currentTabFeeds);
-		});
-	}, []);
+  useEffect(() => {
+    getCurrentTabFeeds().then((currentTabFeeds) => {
+      setFeeds(currentTabFeeds);
+    });
+  }, []);
 
-	return (
-		<div className={styleFeedList}>
-			{feed && (
-				<div className={styleFeed}>
-					<img
-						src={feed.faviconUrl}
-						className={styleFaviconImage}
-						alt={`${feed.pageTitle} favicon`}
-					/>
-					<div className={styleFeedInformation}>
-						<span className={stylePageTitle}>{feed.pageTitle}</span>
-						<div className={styleFeedUrl}>{feed.feedUrl ? feed.feedUrl : "Feed Not Found"}</div>
-					</div>
-					<button
-						type="button"
-						disabled={!feed.feedUrl}
-						onClick={() => navigator.clipboard.writeText(feed.feedUrl)}
-					>
-						copy
-					</button>
-				</div>
-			)}
-		</div>
-	);
+  return (
+    <div className={styleFeedList}>
+      {feed && (
+        <div className={styleFeed}>
+          <img
+            src={feed.faviconUrl}
+            className={styleFaviconImage}
+            alt={`${feed.pageTitle} favicon`}
+          />
+          <div className={styleFeedInformation}>
+            <span className={stylePageTitle}>{feed.pageTitle}</span>
+            <div className={styleFeedUrl}>{feed.feedUrl ? feed.feedUrl : "Feed Not Found"}</div>
+          </div>
+          <button
+            type="button"
+            disabled={!feed.feedUrl}
+            onClick={() => navigator.clipboard.writeText(feed.feedUrl)}
+          >
+            copy
+          </button>
+        </div>
+      )}
+    </div>
+  );
 };
 
 export { FeedInformation };

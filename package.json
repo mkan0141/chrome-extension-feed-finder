@@ -1,31 +1,31 @@
 {
-	"name": "find-feed-url",
-	"displayName": "Find feed url",
-	"version": "0.0.1",
-	"description": "A basic Plasmo extension.",
-	"author": "mkan0141",
-	"scripts": {
-		"dev": "plasmo dev",
-		"build": "plasmo build",
-		"package": "plasmo package"
-	},
-	"dependencies": {
-		"@emotion/css": "11.11.2",
-		"plasmo": "0.88.0",
-		"react": "18.2.0",
-		"react-dom": "18.2.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "1.8.2",
-		"@types/chrome": "0.0.258",
-		"@types/node": "20.11.5",
-		"@types/react": "18.2.48",
-		"@types/react-dom": "18.2.18",
-		"lefthook": "^1.6.18",
-		"typescript": "5.3.3"
-	},
-	"manifest": {
-		"host_permissions": ["https://*/*"],
-		"permissions": ["scripting", "activeTab"]
-	}
+  "name": "find-feed-url",
+  "displayName": "Find feed url",
+  "version": "0.0.1",
+  "description": "A basic Plasmo extension.",
+  "author": "mkan0141",
+  "scripts": {
+    "dev": "plasmo dev",
+    "build": "plasmo build",
+    "package": "plasmo package"
+  },
+  "dependencies": {
+    "@emotion/css": "11.11.2",
+    "plasmo": "0.88.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.2",
+    "@types/chrome": "0.0.258",
+    "@types/node": "20.11.5",
+    "@types/react": "18.2.48",
+    "@types/react-dom": "18.2.18",
+    "lefthook": "^1.6.18",
+    "typescript": "5.3.3"
+  },
+  "manifest": {
+    "host_permissions": ["https://*/*"],
+    "permissions": ["scripting", "activeTab"]
+  }
 }
