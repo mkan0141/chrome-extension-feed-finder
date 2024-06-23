@@ -4,3 +4,6 @@ pre-commit:
     biome format:
       glob: "*.{js,ts,jsx,tsx}"
       run: pnpm biome format {staged_files}
+    biome lint:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: pnpm biome lint {staged_files}
