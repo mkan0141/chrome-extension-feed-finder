@@ -1,7 +1,13 @@
-import { FeedInformation } from "./components/FeedInformation";
+import { FeedInformation } from "@/components/FeedInformation";
+import { AppHeader } from "@/components/Header";
 
 function IndexPopup() {
-  return <FeedInformation />;
+  return (
+    <>
+      <AppHeader />
+      <FeedInformation />
+    </>
+  );
 }
 
 export default IndexPopup;
