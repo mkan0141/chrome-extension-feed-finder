@@ -1,3 +1,5 @@
+import "./style.css";
+
 import { FeedInformation } from "@/components/FeedInformation";
 import { AppHeader } from "@/components/Header";
 
